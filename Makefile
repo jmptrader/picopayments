@@ -88,7 +88,7 @@ test: setup
 	$(PEP8) examples
 	$(PEP8) tests
 	$(PYTEST) --ignore=env --verbose --cov-config=.coveragerc --cov-report=term-missing --cov=./picopayments -vv
-	# $(PYTEST) --ignore=env --verbose --cov-config=.coveragerc --cov-report=term-missing --cov=./picopayments -vv --capture=no --pdb tests/api_mph_sync_test.py::test_repeated_unnotified_transfer
+	# $(PYTEST) --ignore=env --verbose --cov-config=.coveragerc --cov-report=term-missing --cov=./picopayments -vv --capture=no --pdb tests/lib_test.py # ::test_repeated_unnotified_transfer
 	# $(COVERAGE) run --source=picopayments setup.py test
 	# $(COVERAGE) html
 	# $(COVERAGE) report --fail-under=90

@@ -162,7 +162,6 @@ def complete_connection(handle, c2h_deposit_script,
 
 
 def find_key_with_funds(asset, asset_quantity, btc_quantity):
-    btc_quantity = btc_quantity + _get_fee_multaple(factor=1)
     nearest = {"key": None, "available": 2100000000000000}
     for key in db.keys(asset=asset):
         address = key["address"]
